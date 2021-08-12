@@ -8,7 +8,6 @@ Visuals::Visuals(float* tSize, int* slt, std::vector <bool>* lgType, std::vector
 
 void Visuals::renderBoard(SpriteRenderer* renderer)
 {
-	std::cout << legalSquares->size() << std::endl;
 	for (int i = 0; i < 8; i++)
 		for (int j = 0; j < 8; j++)
 			boardSquare[i][j]->Draw(*renderer);
